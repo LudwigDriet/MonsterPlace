@@ -1,0 +1,98 @@
+.casillero{
+    border-bottom: 1px solid #FF6363 ;
+
+    &:last-of-type {
+        border-bottom: none;
+    }
+}
+
+
+.casillero:hover{
+    transform: translateY(-3px);
+    transition: 0.4s ease-out;
+    box-shadow: 0 15px 40px 0 #FF6363 , 0 17px 17px 0 #FF6363 ;
+    z-index: 100;
+}
+.user{
+    display: block;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    margin-left: 10px;
+}
+
+.encabezado{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: normal;
+    margin-left: 20px;
+    border-bottom:1px solid #FF6363 ;
+    width: 100%;
+    padding-bottom: 20px;
+    letter-spacing: 3px;
+}
+.nick-junto{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nick{
+    
+    font-weight: 300;
+    letter-spacing: 3px;
+    width: 2%;
+    margin: 15px 0;
+    flex: 5 ;
+    text-align: right;
+    flex: 3 0 3px;
+    
+    
+}
+.label{
+    flex: 3 0 3px;
+    text-align: right;
+    position: relative;
+    top: 5px;
+}
+
+.caja_ranking{
+    // overflow: scroll ;
+    // height: 40rem;
+    margin: 2rem auto;
+    height: 40rem;
+    width:100%;
+    max-width: 450px;
+    background: black;
+    overflow:auto;
+    box-sizing: border-box;
+    
+  
+}
+.caja_ranking::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.caja_ranking::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.caja_ranking::-webkit-scrollbar-button:increment{
+    display: none;
+}
+
+.caja_ranking::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.caja_ranking::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.caja_ranking::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.caja_ranking::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}

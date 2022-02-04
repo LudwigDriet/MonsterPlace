@@ -1,0 +1,535 @@
+@use '../estilosBase/variables' as v;
+///////////////////////////
+
+// segundero---
+
+.bloque{
+  margin: 0px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bloque div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(80, 80, 80);
+  box-shadow: 0px 0px 6px 2px #bd9635 inset;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: bold;
+  width: 100px;
+  height: 70px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+
+//----
+.campoErr{
+    display: flex;
+    width: 100%;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    color: #e92b2d;
+    font-weight: 600;
+    font-size: 12px;
+   
+
+}
+.container-log{
+  display: block;
+  display: flex;
+  justify-content: center;
+  
+ 
+}
+.login-box {
+    
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    
+    padding: 40px;
+    
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    // box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    box-shadow: 0 0 20px v.$color-titulo;
+    border-radius: 10px;
+    margin-bottom: 10rem;
+    margin-top: 5rem;
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px ;
+    font-size: 16px;
+    color: v.$color-titulo;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: v.$color-titulo;
+    font-size: 12px;
+  }
+  
+  .login-box form .botonn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: v.$color-titulo;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+
+  .login-box .form .botonn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: v.$color-titulo;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+
+  .botonImagen{
+    position: relative;
+    left: 350px;
+    top:-50px;
+    cursor: pointer;
+    color: v.$color-titulo; 
+    padding: 5px 10px;
+    width: 82px;
+    border: 1px solid v.$color-titulo;
+    
+  }
+  
+
+  .boton_ganador{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: v.$color-titulo;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    background: none;
+      border: none;
+  }
+
+  .boton_ganador:hover{
+    background: v.$color-titulo;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px v.$color-titulo,
+                0 0 25px v.$color-titulo,
+                0 0 50px v.$color-titulo,
+                0 0 100px v.$color-titulo;
+  }
+  
+  .boton_ganador span{
+    position: absolute;
+    display: block;
+  }
+  
+  .boton_ganador span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, v.$color-titulo);
+    animation: btn-anim11 1s linear infinite;
+  }
+  @keyframes btn-anim11 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+
+  .boton_ganador span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, v.$color-titulo);
+    animation: btn-anim22 1s linear infinite;
+    animation-delay: .25s
+  }
+  @keyframes btn-anim22 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+
+  .boton_ganador span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, v.$color-titulo);
+    animation: btn-anim33 1s linear infinite;
+    animation-delay: .5s
+  }
+  @keyframes btn-anim33 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+
+  .boton_ganador span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, v.$color-titulo);
+    animation: btn-anim44 1s linear infinite;
+    animation-delay: .75s
+  }
+  @keyframes btn-anim44 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+  
+  .login-box .botonn span {
+    position: absolute;
+    display: block;
+  }
+  
+  .login-box .botonn span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, v.$color-titulo);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .login-box .botonn span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, v.$color-titulo);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .login-box .botonn span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, v.$color-titulo);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .login-box .botonn span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, v.$color-titulo);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+
+  .botonn{
+      background: none;
+      border: none;
+  }
+
+
+
+//////////
+
+
+.detail-content {
+    
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  
+ 
+  
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  // box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  box-shadow: 0 0 20px v.$color-titulo;
+  border-radius: 10px;
+}
+
+.usuario-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+    
+}
+
+.detail-content p {
+  color: v.$color-titulo;
+  font-size: 25px;
+  
+  
+}
+
+.chat{
+  width: 100%;
+ height: 486px;
+  
+  
+  // border: 2px solid rgba(190, 39, 39, 0.24);
+  border-radius: 20px;
+  margin-top: 2.5rem;
+  color:#FFB520;
+  display: flex;
+  justify-content: center;
+  background:linear-gradient(110.62deg, rgba(255, 255, 255, 0.25) 6.39%, rgba(255, 255, 255, 0) 53.34%);
+  mix-blend-mode: normal;
+  backdrop-filter: blur(40px);
+
+}
+
+.divTotal{
+  display:block;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 50px;
+  background:v.$color-secundario;
+  background-color: rgba(0, 0, 0, 0.61);
+  
+  box-shadow: 0px 10px 10px -6px black;
+}
+
+.divNombre{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+  color:v.$color-fondo;
+  
+}
+
+.divteimer{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+  width: 250px;
+  height: 130px;
+  border-radius: 20px;
+  background:linear-gradient(110.62deg, rgba(255, 255, 255, 0.25) 6.39%, rgba(255, 255, 255, 0) 53.34%);
+  mix-blend-mode: normal;
+  backdrop-filter: blur(40px);
+  background-size: cover;
+  background-position:center;
+  line-height: 5px;
+  color:v.$color-fondo;
+  h1{
+    color:v.$blanco;
+  }
+}
+.divIzq{
+  display:flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: center;
+  margin-top: 20px;
+  padding: 15px 10px;
+  width: 350px;
+  height: 130px;
+  border-radius: 20px;
+  background:linear-gradient(110.62deg, rgba(255, 255, 255, 0.25) 6.39%, rgba(255, 255, 255, 0) 53.34%);
+  mix-blend-mode: normal;
+  backdrop-filter: blur(40px);
+  background-size: cover;
+  background-position:center;
+  line-height: 5px;
+
+ 
+  h2{
+    position: relative;
+    right: 30px;
+    text-align: right;
+    color:v.$blanco;
+    
+  }
+}
+
+.divDer{
+  display:flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  // position: relative;
+  // right: 0%;
+  margin-top: 20px;
+  padding: 15px 10px;
+  
+  width: 350px;
+  height: 130px;
+  border-radius: 20px;
+  background:linear-gradient(110.62deg, rgba(255, 255, 255, 0.25) 6.39%, rgba(255, 255, 255, 0) 53.34%);
+  mix-blend-mode: normal;
+  backdrop-filter: blur(40px);
+  background-size: cover;
+  background-position:center;
+  line-height: 5px;
+  
+  h2{
+    position: relative;
+    left: 30px;
+    text-align: left;
+    color:v.$blanco;
+  }
+}
+
+.barraVidaizq{
+  display: flex;
+  width: 80%;
+  align-items: center;
+  span{
+    margin: 0 10px;
+    color:white;
+  }
+}
+.barraVidader{
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: right;
+  span{
+    margin: 0 10px;
+    color:white;
+  }
+}
+
+.caja-chat{
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+ 
+  
+}
+
+.cartita{
+  width:210px; 
+
+  height : 190px; 
+
+  cursor: pointer;
+
+  
+
+  &:hover{
+        transform: translateY(-10px);
+        transform:translateY(-300px);
+        transition: 0.4s ease-out;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1067px){
+  .login-box {
+      width: 100%;
+  }
+     
+}
